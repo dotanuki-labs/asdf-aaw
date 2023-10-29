@@ -1,11 +1,12 @@
-# asdf-maestro
+# asdf-aaw
 
-[![CI](https://github.com/dotanuki-labs/asdf-maestro/actions/workflows/ci.yml/badge.svg)](https://github.com/dotanuki-labs/asdf-maestro/actions/workflows/ci.yml)
+[![CI](https://github.com/dotanuki-labs/asdf-aaw/actions/workflows/ci.yml/badge.svg)](https://github.com/dotanuki-labs/asdf-aaw/actions/workflows/ci.yml)
 [![Code Style](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://shellcheck.net/)
-[![License](https://img.shields.io/github/license/dotanuki-labs/asdf-maestro)](https://choosealicense.com/licenses/mit)
+[![License](https://img.shields.io/github/license/dotanuki-labs/asdf-aaw)](https://choosealicense.com/licenses/mit)
 
 
-A [maestro](https://github.com/mobile-dev-inc/maestro) plugin for [asdf](https://github.com/asdf-vm/asdf).
+A [android-archives-watchdog](https://github.com/dotanuki-las/android-archives-watchdog)
+plugin for [asdf](https://github.com/asdf-vm/asdf).
 
 
 ## Installing
@@ -13,30 +14,29 @@ A [maestro](https://github.com/mobile-dev-inc/maestro) plugin for [asdf](https:/
 Installing this plugin:
 
 ```bash
-$> asdf plugin add maestro https://github.com/dotanuki-labs/asdf-maestro.git
+$> asdf plugin add aaw https://github.com/dotanuki-labs/asdf-aaw.git
 ```
 
 ## Using
 
-Managing `maestro` with `asdf`:
+Managing `aaw` with `asdf`:
 
 ```bash
 
-# Show all installable versions
-$> asdf list-all maestro
+# Shows all installable versions
+$> asdf list-all aaw
 
-# Download the latest version
-$> asdf install maestro latest
+# Downloads the latest version
+$> asdf install aaw latest
 
-# Define the latest version for your local project (writes <project>/.tool-versions)
-$> asdf local maestro latest
+# Defines the latest version for your local project (writes <project>/.tool-versions)
+$> asdf local aaw latest
 
-# Now maestro commands are available
-$> maestro --version
+# Now aaw commands are available
+$> aaw version
 
-# Rollback/install a previous version
-$> asdf install maestro 1.24.0
-$> asdf local maestro 1.24.0
+# Rolls-back / installs a specific version
+$> asdf install aaw 0.1.0
 
 ```
 
