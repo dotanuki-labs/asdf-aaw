@@ -44,7 +44,6 @@ download_release() {
   echo
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
 
-  echo "Downloaded completed with success!"
 }
 
 install_version() {
