@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":prHourlyLimit2",
+    "group:monorepos",
+    "workarounds:all"
+  ],
+  "osvVulnerabilityAlerts": true,
+  "dependencyDashboard": true,
+  "enabledManagers": ["asdf", "github-actions"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": false
+    }
+  ],
+  "labels": ["dependencies"]
+}
